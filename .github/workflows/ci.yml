@@ -84,3 +84,8 @@ jobs:
           curl -f http://localhost:8080 || echo "App not responding"
           docker stop democyber-test
           docker rm democyber-test
+
+      
+      # Push Docker image to Docker Hub
+      - name: Push Docker image
+        run: docker push $DOCKER_IMAGE_NAME
