@@ -86,6 +86,6 @@ jobs:
           docker rm democyber-test
 
       
-      # Push Docker image to Docker Hub
+      # Push Docker imge to Docker Hub
       - name: Push Docker image
         run: docker push $DOCKER_IMAGE_NAME
